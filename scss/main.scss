@@ -1,0 +1,242 @@
+@import "config";
+@import "utilities";
+
+// General Styles
+* {
+  margin: 0;
+  padding: 0;
+  // box-sizing: border-box;
+}
+// .
+html,
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.5;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+.main-text {
+  font-family: "Gravitas One";
+}
+
+// Navigation
+#nav {
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    .nav {
+      height: 75px;
+      &-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        ul {
+          display: flex;
+          font-size: 18px;
+          font-weight: 600;
+
+          li {
+            padding: 24px 16px;
+            transition: all 200ms;
+            &:hover {
+              background: $clr-gr;
+            }
+          }
+        }
+      }
+
+      &-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .btn:nth-child(4) {
+          min-width: 0px !important;
+        }
+
+        .btn:last-child {
+          margin-right: 0;
+        }
+
+        i {
+          transition: all 200ms;
+          &:hover {
+            color: $clr-gr;
+          }
+        }
+
+        a {
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+}
+
+// Header
+.header {
+  height: 50vh;
+  padding: 90px 0;
+  box-sizing: border-box;
+
+  &-content {
+    box-sizing: border-box;
+
+    padding: 0 90px;
+    margin: 0 13px;
+  }
+}
+
+.sr-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+
+  .s-bar {
+    outline: none;
+    &::placeholder {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    &:focus {
+      border-bottom-left-radius: 0px;
+      border: none;
+    }
+  }
+}
+
+//Sections
+#sections {
+  .section-wrap {
+    margin-top: -10px;
+    min-height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    // Section Content: A
+    .section-content-a {
+      padding: 43px;
+      min-width: 450px;
+      margin-left: 200px;
+
+      a {
+        min-width: 170px;
+        max-width: 170px;
+        margin: auto;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+
+    // Section Content: B
+    .section-content-b {
+      padding: 43px;
+      max-height: 400px;
+      max-width: 620px;
+      min-width: 450px;
+      .card {
+        height: 100%;
+        padding: 16px;
+        background: #e7e9eb;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+
+        .btn {
+          width: 170px;
+        }
+
+        .card-heading {
+          font-size: 24px;
+          font-weight: 700;
+          margin: 10px 0;
+          text-transform: none;
+        }
+        .code-area {
+          border-left: 4px $clr-gr solid;
+          width: 95%;
+          height: 65%;
+          margin: auto;
+          background: #fff;
+          padding: 8px 12px;
+          margin: 16px 0px;
+        }
+      }
+    }
+  }
+}
+
+// Section Lang
+#langs {
+  .langs-grid {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-row-gap: 50px;
+    padding: 80px;
+
+    .card {
+      &-lang {
+        &:nth-child(2n + 1) {
+          margin-left: 150px;
+        }
+        &:nth-child(2n + 2) {
+          margin-right: 150px;
+        }
+        min-height: 225px;
+        min-width: 570px;
+        padding: 24px;
+        align-items: center;
+        text-align: center;
+
+        .btn {
+          min-width: 170px;
+          max-width: 170px;
+        }
+      }
+    }
+  }
+}
+
+// Section Lang 2
+#langs-2 {
+  padding: 32px 250px;
+  .langs-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    justify-items: center;
+    grid-gap: 70px 40px;
+    text-align: center;
+
+    .langs-2 {
+      min-width: 232px;
+      min-height: 65px;
+      font-size: 30px;
+    }
+  }
+}

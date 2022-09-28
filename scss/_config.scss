@@ -1,0 +1,23 @@
+// Variables
+$website-width: 1680px;
+$clr-gr: #04aa6d;
+$clr-light-green: #d9eee1;
+$clr-yw: #fff4a3;
+$clr-dark: #282a35;
+$clr-pink: #ffc0c7;
+$clr-light-pink: #f3ecea;
+$clr-light-blue: #96d4d4;
+$clr-light: #e7e9eb;
+$clr-white: #fff;
+$bg-image: url();
+
+$hov: rgba(20, 20, 20, 0.5);
+
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
