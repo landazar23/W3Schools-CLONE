@@ -4,7 +4,11 @@
   background-color: inherit;
   margin: auto;
 }
-
+.clr::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 .logo {
   width: 45px;
   height: 43px;
@@ -39,6 +43,12 @@
     padding: 24px;
     min-width: 218px;
     min-height: 65px;
+  }
+
+  &-sq-small {
+    @extend %btn-shared;
+    border-radius: 5px;
+    padding: 6px 18px !important;
   }
 
   &-sr {
@@ -157,7 +167,7 @@
   text-align: center;
 }
 
-.header-title {
+.title-header {
   font-size: 70px;
   font-weight: 700;
 }
@@ -267,7 +277,6 @@ span {
     grid-column-end: 3;
     min-width: 594px !important;
     min-height: 65px !important;
-    padding: 36px 24px;
   }
 
   .langs-card-2:nth-child(2) {
@@ -275,32 +284,31 @@ span {
     grid-column-end: 5;
     min-width: 594px !important;
     min-height: 65px !important;
-    padding: 36px 24px;
   }
 
   .langs-card-2:nth-child(35) {
     grid-column: 1 / span 2;
     min-width: 594px !important;
     min-height: 65px !important;
-    padding: 36px 24px;
   }
   .langs-card-2:nth-child(36) {
     grid-column: 3 / span 2;
     min-width: 594px !important;
     min-height: 65px !important;
-    padding: 36px 24px;
+
+    background: $clr-yw !important;
   }
   .langs-card-2:nth-child(37) {
     grid-column: 1 / span 2;
     min-width: 594px !important;
     min-height: 65px !important;
-    padding: 36px 24px;
+
+    background: $clr-pink !important;
   }
   .langs-card-2:nth-child(38) {
     grid-column: 3 / span 2;
     min-width: 594px !important;
     min-height: 65px !important;
-    padding: 36px 24px;
   }
 
   // Colors
@@ -318,5 +326,44 @@ span {
   }
   .langs-card-2:nth-child(5n + 5) {
     background: $clr-light-blue;
+  }
+}
+
+// Section: Code Editor
+.code-editor-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: red;
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: 5px;
+  float: left;
+}
+
+.title-code {
+  margin-top: 2px;
+  // margin-bottom: 20px;
+  font-size: 65px;
+  font-weight: 900;
+}
+
+.lead-code {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+// Color on dots
+.code-editor-left {
+  span:nth-child(1) {
+    background-color: #ed594a;
+  }
+  span:nth-child(2) {
+    background-color: #fdd800;
+  }
+  span:nth-child(3) {
+    background-color: #5ac05a;
   }
 }
