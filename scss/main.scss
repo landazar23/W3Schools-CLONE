@@ -7,7 +7,7 @@
   padding: 0;
   // box-sizing: border-box;
 }
-// .
+// ..
 html,
 body {
   font-family: "Source Sans Pro", sans-serif;
@@ -202,10 +202,10 @@ img {
     .card {
       &-lang {
         &:nth-child(2n + 1) {
-          margin-left: 150px;
+          // margin-left: 150px;
         }
         &:nth-child(2n + 2) {
-          margin-right: 150px;
+          // margin-right: 150px;
         }
         min-height: 225px;
         min-width: 570px;
@@ -232,8 +232,13 @@ img {
     justify-items: center;
     grid-gap: 70px 40px;
     text-align: center;
+    background: $clr-dark !important;
 
-    .langs-2 {
+    .langs-card-2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
       min-width: 232px;
       min-height: 65px;
       font-size: 30px;

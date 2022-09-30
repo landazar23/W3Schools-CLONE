@@ -190,57 +190,57 @@ span {
     color: #3a3a3a;
     margin: 10px 0px; }
 
-#langs-2 a:nth-child(1) {
+#langs-2 .langs-card-2:nth-child(1) {
   grid-column-start: 1;
   grid-column-end: 3;
   min-width: 594px !important;
   min-height: 65px !important;
   padding: 36px 24px; }
 
-#langs-2 a:nth-child(2) {
+#langs-2 .langs-card-2:nth-child(2) {
   grid-column-start: 3;
   grid-column-end: 5;
   min-width: 594px !important;
   min-height: 65px !important;
   padding: 36px 24px; }
 
-#langs-2 a:nth-child(35) {
+#langs-2 .langs-card-2:nth-child(35) {
   grid-column: 1 / span 2;
   min-width: 594px !important;
   min-height: 65px !important;
   padding: 36px 24px; }
 
-#langs-2 a:nth-child(36) {
+#langs-2 .langs-card-2:nth-child(36) {
   grid-column: 3 / span 2;
   min-width: 594px !important;
   min-height: 65px !important;
   padding: 36px 24px; }
 
-#langs-2 a:nth-child(37) {
+#langs-2 .langs-card-2:nth-child(37) {
   grid-column: 1 / span 2;
   min-width: 594px !important;
   min-height: 65px !important;
   padding: 36px 24px; }
 
-#langs-2 a:nth-child(38) {
+#langs-2 .langs-card-2:nth-child(38) {
   grid-column: 3 / span 2;
   min-width: 594px !important;
   min-height: 65px !important;
   padding: 36px 24px; }
 
-#langs-2 a:nth-child(5n + 1) {
+#langs-2 .langs-card-2:nth-child(5n + 1) {
   background: #ffc0c7; }
 
-#langs-2 a:nth-child(5n + 2) {
+#langs-2 .langs-card-2:nth-child(5n + 2) {
   background: #fff4a3; }
 
-#langs-2 a:nth-child(5n + 3) {
+#langs-2 .langs-card-2:nth-child(5n + 3) {
   background: #e7e9eb; }
 
-#langs-2 a:nth-child(5n + 4) {
+#langs-2 .langs-card-2:nth-child(5n + 4) {
   background: #d9eee1; }
 
-#langs-2 a:nth-child(5n + 5) {
+#langs-2 .langs-card-2:nth-child(5n + 5) {
   background: #96d4d4; }
 
 * {
@@ -384,10 +384,6 @@ img {
     padding: 24px;
     align-items: center;
     text-align: center; }
-    #langs .langs-grid .card-lang:nth-child(2n + 1) {
-      margin-left: 150px; }
-    #langs .langs-grid .card-lang:nth-child(2n + 2) {
-      margin-right: 150px; }
     #langs .langs-grid .card-lang .btn {
       min-width: 170px;
       max-width: 170px; }
@@ -400,8 +396,13 @@ img {
     grid-template-rows: repeat(11, 1fr);
     justify-items: center;
     grid-gap: 70px 40px;
-    text-align: center; }
-    #langs-2 .langs-grid-2 .langs-2 {
+    text-align: center;
+    background: #282a35 !important; }
+    #langs-2 .langs-grid-2 .langs-card-2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
       min-width: 232px;
       min-height: 65px;
       font-size: 30px; }

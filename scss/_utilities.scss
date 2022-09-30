@@ -262,7 +262,7 @@ span {
 
 #langs-2 {
   // Grid Order - Span
-  a:nth-child(1) {
+  .langs-card-2:nth-child(1) {
     grid-column-start: 1;
     grid-column-end: 3;
     min-width: 594px !important;
@@ -270,7 +270,7 @@ span {
     padding: 36px 24px;
   }
 
-  a:nth-child(2) {
+  .langs-card-2:nth-child(2) {
     grid-column-start: 3;
     grid-column-end: 5;
     min-width: 594px !important;
@@ -278,25 +278,25 @@ span {
     padding: 36px 24px;
   }
 
-  a:nth-child(35) {
+  .langs-card-2:nth-child(35) {
     grid-column: 1 / span 2;
     min-width: 594px !important;
     min-height: 65px !important;
     padding: 36px 24px;
   }
-  a:nth-child(36) {
+  .langs-card-2:nth-child(36) {
     grid-column: 3 / span 2;
     min-width: 594px !important;
     min-height: 65px !important;
     padding: 36px 24px;
   }
-  a:nth-child(37) {
+  .langs-card-2:nth-child(37) {
     grid-column: 1 / span 2;
     min-width: 594px !important;
     min-height: 65px !important;
     padding: 36px 24px;
   }
-  a:nth-child(38) {
+  .langs-card-2:nth-child(38) {
     grid-column: 3 / span 2;
     min-width: 594px !important;
     min-height: 65px !important;
@@ -304,19 +304,19 @@ span {
   }
 
   // Colors
-  a:nth-child(5n + 1) {
+  .langs-card-2:nth-child(5n + 1) {
     background: $clr-pink;
   }
-  a:nth-child(5n + 2) {
+  .langs-card-2:nth-child(5n + 2) {
     background: $clr-yw;
   }
-  a:nth-child(5n + 3) {
+  .langs-card-2:nth-child(5n + 3) {
     background: $clr-light;
   }
-  a:nth-child(5n + 4) {
+  .langs-card-2:nth-child(5n + 4) {
     background: $clr-light-green;
   }
-  a:nth-child(5n + 5) {
+  .langs-card-2:nth-child(5n + 5) {
     background: $clr-light-blue;
   }
 }
