@@ -60,6 +60,18 @@
     text-align: center;
     border: none;
   }
+
+  &-spaces {
+    @extend %btn-shared;
+    border-radius: 25px;
+    font-size: 22px;
+    height: auto;
+    // text-align: center;
+    width: 300px;
+    // // display: block;
+    // margin: 15px auto 18px auto;
+    padding: 11px 1px;
+  }
 }
 
 // Background
@@ -208,10 +220,23 @@
   align-items: center;
   text-align: center;
 }
-
+// Headings / Leads
 .section-heading {
   font-size: 100px;
   font-weight: 700;
+}
+
+.spaces-heading {
+  font-size: 65px;
+  font-weight: 700;
+  margin-top: 2px;
+  margin-bottom: -20px;
+}
+
+.spaces-lead {
+  margin-top: 35px;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .section-lead {
