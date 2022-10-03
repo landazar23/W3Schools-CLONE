@@ -72,6 +72,16 @@
     // margin: 15px auto 18px auto;
     padding: 11px 1px;
   }
+
+  &-quizz {
+    @extend %btn-shared;
+    border-radius: 5px;
+    padding: 70px 50px;
+    max-width: 467px;
+    height: 52px;
+    opacity: 0.97;
+    font-size: 35px;
+  }
 }
 
 // Background
@@ -109,6 +119,11 @@
   &-light-blue {
     background: $clr-light-blue;
     color: set-text-color($clr-light-blue);
+  }
+
+  &-light-pink {
+    background: $clr-light-pink;
+    color: set-text-color($clr-light-pink);
   }
 
   &-dark {
@@ -226,6 +241,18 @@
   font-weight: 700;
 }
 
+.color-heading {
+  font-size: 65px;
+  font-weight: 700;
+  // margin-top: 2px;
+  // margin-bottom: -20px;
+}
+
+.color-lead {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 25px 0px 10px 0;
+}
 .spaces-heading {
   font-size: 65px;
   font-weight: 700;
@@ -245,12 +272,48 @@
   margin: 19.8px 0px;
 }
 
+.code-game-heading {
+  font-family: "Freckle Face", cursive;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.code-game-lead {
+  font-family: "Freckle Face", cursive;
+  font-size: 32px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.quiz-heading {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 67.5px;
+  margin: 10px 0;
+}
+.quiz-lead {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.temp-heading {
+  font-size: 45px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.temp-lead {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
 .header {
   min-height: 600px;
 }
 
 .section-wrap {
-  padding: 32px 100px;
   margin-top: -10px;
 }
 
@@ -275,7 +338,6 @@ span {
 // Card
 .card-lang {
   border-radius: 5px;
-  min-width: 600px;
   .langs-heading {
     font-size: 45px;
     font-weight: 700;

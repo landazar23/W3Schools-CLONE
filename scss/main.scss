@@ -139,9 +139,11 @@ img {
 
     // Section Content: A
     .section-content-a {
-      padding: 43px;
-      min-width: 450px;
-      margin-left: 200px;
+      padding: 42px;
+      padding-right: 80px;
+      width: 451px;
+      // margin-left: 200px;
+      justify-self: right;
 
       a {
         min-width: 170px;
@@ -154,7 +156,7 @@ img {
 
     // Section Content: B
     .section-content-b {
-      padding: 43px;
+      padding: 42px;
       max-height: 400px;
       max-width: 620px;
       min-width: 450px;
@@ -194,21 +196,23 @@ img {
   .langs-grid {
     text-align: center;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 50px;
     padding: 80px;
+    align-content: center;
+    grid-gap: 56px 84px;
+    margin: auto;
+
+    div:nth-child(odd) {
+      // background-color: #000;
+      justify-self: right;
+      width: 100%;
+    }
 
     .card {
       &-lang {
-        &:nth-child(2n + 1) {
-          // margin-left: 150px;
-        }
-        &:nth-child(2n + 2) {
-          // margin-right: 150px;
-        }
-        min-height: 225px;
-        min-width: 570px;
+        height: 216px;
+        max-width: 570px;
         padding: 24px;
         align-items: center;
         text-align: center;
@@ -217,6 +221,10 @@ img {
           min-width: 170px;
           max-width: 170px;
         }
+      }
+      &-wrap {
+        padding: 2% 3%;
+        height: 100%;
       }
     }
   }
@@ -363,11 +371,126 @@ img {
 .spaces-content {
   position: relative;
   .spaces-how-img {
-    max-width: 50%;
+    height: 300px;
+    max-width: 1082px;
     margin: auto;
     vertical-align: middle;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+  }
+}
+
+// Section: Color Picker
+#color-picker {
+  box-sizing: border-box;
+  .color-content {
+    height: 30vh;
+    padding: 78px 0px 95px 0px;
+    overflow: hidden;
+    // width: $website-width;
+    a {
+      transition: all 100ms;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+// Section: Code Game
+#code-game {
+  // background-color: $clr-light-blue;
+  height: 70vh;
+  padding: 40px 0;
+
+  .code-game-wrap {
+    padding: 3%;
+
+    img {
+      width: 120px;
+      height: 200px;
+      vertical-align: middle;
+      justify-self: center;
+      display: block;
+      margin: 16px auto;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+    .btn {
+      font-size: 18px;
+      // background-color: #282a35;
+      width: 168px;
+      opacity: 1;
+      transition: all 0s;
+
+      &:hover {
+        background-color: #000;
+      }
+    }
+  }
+}
+
+// Section: Quiz
+
+#quiz {
+  .quiz-bg-img-wrap {
+    background-color: #232434;
+    color: #fff;
+    padding: 64px 0 80px 0;
+    background-image: url(../../img/w3codes.png);
+    background-attachment: fixed;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    // height: 60vh;
+    width: 100%;
+
+    .quiz-content {
+      max-width: 1300px;
+      // padding: 0 8px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .btn-wrap-left {
+        padding-right: 50px;
+        width: 100%;
+        a {
+          width: 100%;
+        }
+      }
+      .btn-wrap-right {
+        padding-left: 50px;
+        width: 100%;
+        a {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// Section: Templates
+
+#temp {
+  .temp-wrap {
+    padding: 64px 24px 90px 24px;
+    max-width: 980px;
+    margin: auto;
+    img {
+      margin: 16px 0 20px 0;
+    }
+    .btn-spaces {
+      width: 50%;
+      transition: all 0s;
+      opacity: 1;
+      &:hover {
+        background-color: #000;
+      }
+    }
   }
 }
