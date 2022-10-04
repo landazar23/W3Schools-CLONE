@@ -148,18 +148,20 @@ img {
 //Sections
 #sections {
   .section-wrap {
+    overflow: hidden;
     margin-top: -10px;
     min-height: 60vh;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
     // Section Content: A
     .section-content-a {
       padding: 42px;
-      padding-right: 80px;
-      width: 451px;
+      padding-right: 200px;
+      // width: 451px;
       // margin-left: 200px;
-      justify-self: right;
+      // justify-self: right;
 
       a {
         min-width: 170px;
@@ -175,7 +177,7 @@ img {
       padding: 42px;
       max-height: 400px;
       max-width: 620px;
-      min-width: 450px;
+      width: 100%;
       .card {
         height: 100%;
         padding: 16px;
@@ -209,12 +211,16 @@ img {
 
 // Section Lang
 #langs {
+  .container {
+    overflow: hidden;
+  }
   .langs-grid {
+    margin: auto;
     text-align: center;
     display: grid;
+    padding: 80px 20px;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 50px;
-    padding: 80px;
     align-content: center;
     grid-gap: 56px 84px;
     margin: auto;
@@ -222,7 +228,7 @@ img {
     div:nth-child(odd) {
       // background-color: #000;
       justify-self: right;
-      width: 100%;
+      width: 91.5%;
     }
 
     .card {
@@ -246,31 +252,85 @@ img {
   }
 }
 
-// Section Lang 2
-#langs-2 {
-  padding: 32px 250px;
-  padding-bottom: 64px !important;
+// Langs-2 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.langs-2-wrap {
+  box-sizing: border-box;
+  max-width: 1400px;
+  margin: auto;
+  padding: 0px 10px;
+}
 
-  .langs-grid-2 {
-    overflow: hidden;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(11, 1fr);
-    justify-items: center;
-    grid-gap: 70px 40px;
-    text-align: center;
-    background: $clr-dark !important;
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  justify-items: center;
+  flex-wrap: wrap;
+}
 
-    .langs-card-2 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      // min-width: 232px;
-      min-height: 65px;
-      font-size: 30px;
-    }
+.row-2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  justify-items: center;
+  flex-wrap: nowrap;
+  // !
+}
+
+.col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 0;
+  // padding: 2% 3%;
+}
+
+.col-small {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  //
+  padding: 28px 0px;
+  // padding: 2% 3%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+// Main Button
+.main-button-1,
+.main-button-2 {
+  padding: 36px 24px;
+  background-color: $clr-pink;
+  border-radius: 5px;
+  width: 85%;
+  color: #000;
+  h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 0;
+    color: #000;
+    line-height: 45px;
+  }
+}
+
+.btn-sq-2 {
+  padding: 24px;
+  border-radius: 5px;
+  background-color: $clr-pink;
+  width: 70%;
+  display: block;
+  //  link
+  h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 0;
+    color: #000;
+    line-height: 45px;
   }
 }
 
@@ -594,3 +654,6 @@ img {
     }
   }
 }
+
+// Import Media Queries
+@import "media";

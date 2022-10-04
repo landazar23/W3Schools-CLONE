@@ -1,0 +1,165 @@
+// Niche scenarios
+@media (max-width: 770px) {
+  // Sections Left / Heading from 100px to 60px
+  #sections {
+    .section-a-1,
+    .section-a-2,
+    .section-a-3,
+    .section-a-4,
+    .section-a-5 {
+      .section-wrap {
+        .section-content-a {
+          .section-heading {
+            font-size: 60px;
+            font-weight: 900;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1364px) {
+  // Sections Left Right padding reset
+  #sections {
+    .section-a-1,
+    .section-a-2,
+    .section-a-3,
+    .section-a-4,
+    .section-a-5 {
+      .section-wrap {
+        grid-template-columns: 0.5fr 1fr;
+        .section-content-a {
+          padding-right: 42px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  // Section First A-1 to A-5
+  #sections {
+    .section-a-1,
+    .section-a-2,
+    .section-a-3,
+    .section-a-4,
+    .section-a-5 {
+      .section-wrap {
+        grid-template-columns: repeat(1, 1fr);
+        .section-content-a {
+          // padding: 42px;
+          padding: 3%;
+        }
+        .section-content-a,
+        .section-content-b {
+          margin: auto;
+        }
+        .section-content-b {
+          width: 90%;
+          max-width: 770px;
+          padding: 3%;
+          .card {
+            // width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  //Section: Langs-2
+  .row {
+    // Big buttons go into a column
+    flex-direction: column;
+    align-items: center;
+  }
+  // Big buttons go 100%
+  .col {
+    width: 100%;
+    padding: 2% 0;
+    .main-button-1,
+    .main-button-2 {
+      width: 90%;
+    }
+  }
+
+  .row-2 {
+    flex-wrap: wrap;
+  }
+  .col-small {
+    padding: 2% 0;
+    width: 50%;
+
+    .btn-sq-2 {
+      width: 80%;
+    }
+  }
+
+  // Section: Lang\
+  #langs {
+    .langs-grid {
+      padding: 64px 0;
+      grid-template-columns: 1fr;
+      grid-row-gap: 15px;
+      // display: none;
+      .card-lang {
+        justify-self: center;
+        width: 80%;
+        max-width: unset;
+        max-height: unset;
+        // margin: 0 20px;
+        height: auto;
+      }
+    }
+  }
+
+  #langs .langs-grid div:nth-child(odd) {
+    justify-self: center;
+    width: 80%;
+  }
+}
+
+// Mobile
+@media (max-width: 600px) {
+  // Section First A-1 to A-5
+  #sections {
+    .section-a-1,
+    .section-a-2,
+    .section-a-3,
+    .section-a-4,
+    .section-a-5 {
+      .section-wrap {
+        .section-content-b {
+          display: none;
+        }
+      }
+    }
+  }
+
+  // Langs-2
+  .row {
+    // Big buttons go into a column
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .main-button-2 {
+      padding: 24px;
+    }
+  }
+  .col {
+    padding: 2% 3%;
+    width: 94%;
+  }
+
+  .row-2 {
+    flex-wrap: wrap;
+  }
+  .col-small {
+    width: 100%;
+    padding: 2% 3%;
+
+    .btn-sq-2 {
+      width: 90%;
+    }
+  }
+}

@@ -397,66 +397,8 @@ span {
 }
 
 // Section Langs 2
-//
 
-#langs-2 {
-  // Grid Order - Span
-  .langs-card-2:nth-child(1) {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    min-width: 594px !important;
-    min-height: 65px !important;
-  }
-
-  .langs-card-2:nth-child(2) {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    min-width: 594px !important;
-    min-height: 65px !important;
-  }
-
-  .langs-card-2:nth-child(35) {
-    grid-column: 1 / span 2;
-    min-width: 594px !important;
-    min-height: 65px !important;
-  }
-  .langs-card-2:nth-child(36) {
-    grid-column: 3 / span 2;
-    min-width: 594px !important;
-    min-height: 65px !important;
-
-    background: $clr-yw !important;
-  }
-  .langs-card-2:nth-child(37) {
-    grid-column: 1 / span 2;
-    min-width: 594px !important;
-    min-height: 65px !important;
-
-    background: $clr-pink !important;
-  }
-  .langs-card-2:nth-child(38) {
-    grid-column: 3 / span 2;
-    min-width: 594px !important;
-    min-height: 65px !important;
-  }
-
-  // Colors
-  .langs-card-2:nth-child(5n + 1) {
-    background: $clr-pink;
-  }
-  .langs-card-2:nth-child(5n + 2) {
-    background: $clr-yw;
-  }
-  .langs-card-2:nth-child(5n + 3) {
-    background: $clr-light;
-  }
-  .langs-card-2:nth-child(5n + 4) {
-    background: $clr-light-green;
-  }
-  .langs-card-2:nth-child(5n + 5) {
-    background: $clr-light-blue;
-  }
-}
+// Flex utils
 
 // Section: Code Editor
 .code-editor-dot {
