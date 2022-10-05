@@ -1,6 +1,34 @@
-// Niche scenarios
-@media (max-width: 770px) {
-  // Sections Left / Heading from 100px to 60px
+// Niche scenarios !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+@media (max-width: 550px) {
+  // Header Search bar scale down
+  .header {
+    .header-content {
+      padding: 0px;
+      .sr-flex {
+        .s-bar {
+          min-width: unset;
+          width: 60%;
+        }
+      }
+    }
+  }
+  // Section Code buttons 100%
+  #code-editor {
+    .code-editor-content {
+      span {
+        a {
+          width: 92%;
+        }
+      }
+      a {
+        width: 92%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  // First Section / Left container headings from 100px to 60px
   #sections {
     .section-a-1,
     .section-a-2,
@@ -13,6 +41,146 @@
             font-size: 60px;
             font-weight: 900;
           }
+        }
+      }
+    }
+  }
+
+  h1 {
+    font-size: 60px !important;
+  }
+
+  // Header Title font scaled down x1
+  .header {
+    .header-content {
+      .title-header {
+        font-size: 60px !important;
+      }
+    }
+  }
+}
+
+// Display None: Btn "PRO"
+@media (max-width: 1300px) {
+  #nav {
+    .nav-wrap {
+      .nav-right {
+        a:nth-child(4) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+// Display None: Btn "PRO" + "Get Certified"
+@media (max-width: 1200px) {
+  #nav {
+    .nav-wrap {
+      .nav-right {
+        a:nth-child(4),
+        a:nth-child(5) {
+          display: none;
+        }
+      }
+      .nav-left {
+        ul {
+          li:last-child {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Display None: Btn "PRO" + "Get Certified" + "Free Website"
+@media (max-width: 950px) {
+  #nav {
+    .nav-wrap {
+      .nav-right {
+        a:nth-child(4),
+        a:nth-child(5),
+        a:nth-child(6) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+// Display None: Btn "PRO" + "Get Certified" + "Free Website" + Menu ON
+@media (max-width: 860px) {
+  #nav {
+    .nav-wrap {
+      .nav-right {
+        a:nth-child(4),
+        a:nth-child(5),
+        a:nth-child(6) {
+          display: none;
+        }
+      }
+      .nav-left {
+        ul {
+          li {
+            display: none;
+          }
+          .menu-mobile {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Nav First Icon OFF + BTN Log in scale down
+@media (max-width: 430px) {
+  #nav {
+    .nav-wrap {
+      .nav-right {
+        a:nth-child(1) {
+          display: none;
+        }
+        // Log in button scale down
+        .btn:last-child {
+          min-width: unset !important;
+          width: 48px !important;
+          line-height: 2;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+// Header Search bar button scale down
+@media (max-width: 430px) {
+  .header {
+    .header-content {
+      padding: 0px;
+      .sr-flex {
+        .btn-sr {
+          min-width: unset;
+          width: 20%;
+        }
+      }
+    }
+  }
+}
+
+// Nav ALL Icons OFF + BTN Login scale down
+@media (max-width: 380px) {
+  #nav {
+    .nav-wrap {
+      .nav-right {
+        a:not(:last-child) {
+          display: none;
+        }
+        // Log in button scale down
+        .btn:last-child {
+          min-width: unset !important;
+          width: 48px !important;
+          line-height: 2;
+          font-size: 14px;
         }
       }
     }
@@ -37,6 +205,7 @@
   }
 }
 
+// Tablet !!!!!!!!!!!!!!!!!!!!!!!!!!!!
 @media (max-width: 992px) {
   // Section First A-1 to A-5
   #sections {
@@ -117,9 +286,20 @@
     justify-self: center;
     width: 80%;
   }
+  // Section How to img2 display none
+  #spaces {
+    .spaces-wrap {
+      height: unset;
+      .spaces-content {
+        .spaces-how-img {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
-// Mobile
+// Mobile !!!!!!!!!!!!!!!!!!!!!!!!!!!!
 @media (max-width: 600px) {
   // Section First A-1 to A-5
   #sections {
@@ -130,6 +310,16 @@
     .section-a-5 {
       .section-wrap {
         .section-content-b {
+          display: none;
+        }
+      }
+    }
+  }
+  // Nav First Icon OFF
+  #nav {
+    .nav-wrap {
+      .nav-right {
+        a:nth-child(1) {
           display: none;
         }
       }
@@ -160,6 +350,43 @@
 
     .btn-sq-2 {
       width: 90%;
+    }
+  }
+  // Quizz buttons column
+  #quiz {
+    .quiz-bg-img-wrap {
+      .quiz-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .btn-wrap-left,
+        .btn-wrap-right {
+          width: 80%;
+          padding: 20px 10px;
+          a {
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+
+  // Header Title font scaled down x2
+  .header {
+    .header-content {
+      padding: 0px;
+      .title-header {
+        font-size: 50px !important;
+      }
+      .header-lead {
+        font-size: 20px;
+      }
+      .s-bar[type="text"] {
+        font-size: 16px !important;
+        padding-left: 16px !important;
+        font-weight: bold;
+      }
     }
   }
 }

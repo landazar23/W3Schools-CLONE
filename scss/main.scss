@@ -53,6 +53,9 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
+        .menu-mobile {
+          // display: none;
+        }
 
         ul {
           display: flex;
@@ -60,6 +63,10 @@ img {
           font-weight: 600;
 
           li {
+            a {
+              flex-wrap: nowrap;
+            }
+            flex-wrap: nowrap;
             padding: 24px 16px;
             transition: all 200ms;
             &:hover {
@@ -336,8 +343,8 @@ img {
 
 // Section: Code Editor
 #code-editor {
-  padding: 30px 3px 85px 3px;
-  min-height: 80vh;
+  padding: 30px 16px 85px 16px;
+  // min-height: 80vh;
   // Code Editor ROW
   .container {
     max-width: 942px;
@@ -386,7 +393,7 @@ img {
 #color-picker {
   box-sizing: border-box;
   .color-content {
-    height: 30vh;
+    // height: 30vh;
     padding: 78px 0px 95px 0px;
     overflow: hidden;
     // width: $website-width;
@@ -402,7 +409,7 @@ img {
 // Section: Code Game
 #code-game {
   // background-color: $clr-light-blue;
-  height: 70vh;
+  // height: 70vh;
   padding: 40px 0;
 
   .code-game-wrap {
@@ -457,17 +464,19 @@ img {
       align-items: center;
 
       .btn-wrap-left {
-        padding-right: 50px;
+        padding: 50px;
+        //
         width: 100%;
         a {
-          width: 100%;
+          width: 80%;
         }
       }
       .btn-wrap-right {
-        padding-left: 50px;
+        padding: 50px;
+        //
         width: 100%;
         a {
-          width: 100%;
+          width: 80%;
         }
       }
     }
