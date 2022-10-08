@@ -260,6 +260,7 @@ img {
 }
 
 // Langs-2 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
 .langs-2-wrap {
   box-sizing: border-box;
   max-width: 1400px;
@@ -312,13 +313,13 @@ img {
 .main-button-1,
 .main-button-2 {
   padding: 36px 24px;
-  background-color: $clr-pink;
+  // background-color: $clr-pink;
   border-radius: 5px;
   width: 85%;
   color: #000;
   h2 {
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 700;
     margin: 10px 0;
     color: #000;
     line-height: 45px;
@@ -328,13 +329,13 @@ img {
 .btn-sq-2 {
   padding: 24px;
   border-radius: 5px;
-  background-color: $clr-pink;
+  // background-color: $clr-pink;
   width: 70%;
   display: block;
   //  link
   h2 {
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 700;
     margin: 10px 0;
     color: #000;
     line-height: 45px;
@@ -530,7 +531,7 @@ img {
     height: 100vh;
     box-sizing: border-box;
     overflow: hidden;
-    padding: 48px 24px 100px 24px;
+    padding: 0px 24px 0px 24px;
     max-width: 980px;
     margin: auto;
     .img {
@@ -622,6 +623,7 @@ img {
           }
         }
         .items-right {
+          float: right;
           a {
             color: #fff;
             font-weight: 600;
@@ -631,13 +633,14 @@ img {
           }
         }
 
-        display: flex;
+        // display: flex;
         justify-content: space-between;
         padding: 32px 16px;
       }
       &-icons {
         padding: 0.15px 16px;
-        display: flex;
+        // display: flex;
+        float: right;
         justify-content: end;
       }
       &-text {

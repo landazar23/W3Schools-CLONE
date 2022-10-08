@@ -106,6 +106,27 @@
       }
     }
   }
+  // Footer turns column
+  #footer-main {
+    .footer-wrap {
+      text-align: center;
+      .container-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+        .items-left {
+          margin: auto;
+          grid-gap: 30px;
+          text-align: center;
+          display: grid;
+          grid-template-columns: 500px;
+        }
+      }
+      .container-icons {
+        float: none;
+      }
+    }
+  }
 }
 
 // Display None: Btn "PRO" + "Get Certified" + "Free Website" + Menu ON
@@ -286,7 +307,7 @@
     justify-self: center;
     width: 80%;
   }
-  // Section How to img2 display none
+  // Section Spaces img2 display none
   #spaces {
     .spaces-wrap {
       height: unset;
@@ -386,6 +407,38 @@
         font-size: 16px !important;
         padding-left: 16px !important;
         font-weight: bold;
+      }
+    }
+  }
+
+  // How to
+  #how {
+    .how-wrap {
+      .code-editor-content {
+        .img-body {
+          height: auto;
+          .img-frame {
+            height: auto !important;
+          }
+        }
+      }
+      .pos-relative {
+        .figure {
+          border-left: 50px solid #282a35;
+          height: 80px;
+          // width: 50px;
+          height: 80px;
+          margin-left: -25px;
+          position: absolute;
+          height: 80px;
+          // display: block;
+          top: 0px;
+          left: 50%;
+        }
+      }
+      .btn {
+        margin: 80px auto;
+        outline: transparent;
       }
     }
   }
