@@ -528,7 +528,6 @@ img {
 #how {
   text-align: center;
   .how-wrap {
-    height: 100vh;
     box-sizing: border-box;
     overflow: hidden;
     padding: 0px 24px 0px 24px;
@@ -636,6 +635,35 @@ img {
         // display: flex;
         justify-content: space-between;
         padding: 32px 16px;
+
+        // Hidden until 950px
+        .mobile-hidden {
+          display: none;
+          .mobile-items {
+            .btn-sq-small {
+              max-width: 66px !important;
+              margin-bottom: 16px;
+              font-size: 16px;
+              min-width: unset;
+            }
+          }
+          //  Full width buttons
+          .width-full {
+            .btn-sq-small {
+              display: block;
+              max-width: 264px;
+              margin: auto;
+              font-size: 16px;
+            }
+          }
+          p {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+          }
+        }
       }
       &-icons {
         padding: 0.15px 16px;

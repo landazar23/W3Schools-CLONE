@@ -58,6 +58,24 @@
       }
     }
   }
+  // Section: Career
+  #career {
+    .career-wrap {
+      .career-heading {
+        font-size: 55px;
+        margin: 52px 0px !important;
+        font-weight: 700;
+      }
+      .career-lead {
+        font-size: 40px !important;
+        margin: 40px 0px !important;
+        font-weight: 700;
+      }
+      .btn {
+        width: 100%;
+      }
+    }
+  }
 }
 
 // Display None: Btn "PRO"
@@ -111,17 +129,16 @@
     .footer-wrap {
       text-align: center;
       .container-row {
-        display: grid;
-        grid-template-columns: 1fr;
-        margin: auto;
+        // Display footer column style
+        .mobile-hidden {
+          display: contents;
+        }
+
         .items-left {
-          margin: auto;
-          grid-gap: 30px;
-          text-align: center;
-          display: grid;
-          grid-template-columns: 500px;
+          display: none;
         }
       }
+
       .container-icons {
         float: none;
       }
@@ -414,6 +431,7 @@
   // How to
   #how {
     .how-wrap {
+      margin-bottom: 80px;
       .code-editor-content {
         .img-body {
           height: auto;
@@ -425,19 +443,19 @@
       .pos-relative {
         .figure {
           border-left: 50px solid #282a35;
-          height: 80px;
+          height: 40px !important;
           // width: 50px;
-          height: 80px;
+          // height: 80px;
           margin-left: -25px;
           position: absolute;
-          height: 80px;
           // display: block;
           top: 0px;
           left: 50%;
         }
       }
       .btn {
-        margin: 80px auto;
+        margin: auto;
+        margin-top: 40px;
         outline: transparent;
       }
     }
